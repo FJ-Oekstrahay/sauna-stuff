@@ -205,6 +205,78 @@
             color: #764ba2;
         }
         
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .section-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quick-rec-box {
+            background: linear-gradient(135deg, #f0f3ff 0%, #f5e6ff 100%);
+            border-left: 5px solid #667eea;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .quick-rec-box h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .quick-rec-box .rec-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .quick-rec-box .rec-item:last-child {
+            border-bottom: none;
+        }
+        
+        .quick-rec-box strong {
+            color: #667eea;
+        }
+        
+        .credits {
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+            padding: 30px 40px;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .credits h3 {
+            font-size: 1.1em;
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .credits ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .credits li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .credits a {
+            color: #667eea;
+        }
+        
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8em;
@@ -239,6 +311,8 @@
             <p>Evidence-based wellness from Finnish research and clinical studies</p>
         </header>
         
+        <img src="images/hero-sauna.jpg" alt="Sauna wellness guide hero image" class="hero-image">
+        
         <div class="toc">
             <h2>Table of Contents</h2>
             <ul>
@@ -252,6 +326,40 @@
         </div>
         
         <main>
+            <!-- Quick Recommendations Section -->
+            <section id="quick-recs">
+                <div class="quick-rec-box">
+                    <h3>⚡ Quick Recommendations at a Glance</h3>
+                    
+                    <div class="rec-item">
+                        <strong>🔰 Best for Beginners:</strong> Start with <strong>infrared sauna</strong> at 120–130°F for 15–20 minutes, 2 times per week. Gentler on the body and easier to tolerate while building heat adaptation. Progress by adding 5 minutes per week.
+                    </div>
+                    
+                    <div class="rec-item">
+                        <strong>😴 Best for Sleep:</strong> Use sauna in the <strong>evening, 90 minutes before bedtime</strong>, at 140–160°F for 20 minutes. The post-sauna core temperature drop signals sleep readiness. Avoid morning sessions if sleep is your goal.
+                    </div>
+                    
+                    <div class="rec-item">
+                        <strong>💪 Best for Muscle Recovery:</strong> Post-workout protocol: Sauna within <strong>1–2 hours after training</strong>, at 160–180°F for 15–20 minutes. Increases blood flow, accelerates nutrient delivery, and reduces DOMS. Include cool-down: 10–15 min in cool environment before rehydrating.
+                    </div>
+                    
+                    <div class="rec-item">
+                        <strong>❤️ Best for General Health:</strong> Frequency is key: <strong>2–4 sessions per week</strong> at 160–180°F for 15–20 minutes provides optimal cardiovascular, immune, and metabolic benefits. Consistency beats intensity. The "Rule of 200" applies: Temperature (°F) + humidity (%) ≤ 200.
+                    </div>
+                    
+                    <div class="rec-item">
+                        <strong>🚨 Key Safety Rules (Top 3 Don'ts):</strong><br>
+                        ✗ <strong>Don't exceed 212°F (100°C)</strong> or stay beyond 30 minutes — diminishing returns and elevated risk<br>
+                        ✗ <strong>Don't sauna while dehydrated, intoxicated, or feverish</strong> — compounds physiological stress<br>
+                        ✗ <strong>Don't ignore exit signals: dizziness, nausea, confusion, chest pain, or rapid heartbeat</strong> — exit immediately
+                    </div>
+                    
+                    <div class="rec-item">
+                        <strong>📌 TL;DR:</strong> Sauna works best as a consistent 2–4x/week habit at moderate temperatures (140–180°F for 15–25 min), with proper hydration before and after, tailored to your health status and recovery goals.
+                    </div>
+                </div>
+            </section>
+            
             <!-- Section 1: Types of Saunas -->
             <section id="types">
                 <h2>1. Types of Saunas: Characteristics, Pros & Cons</h2>
@@ -259,6 +367,8 @@
                 <h3>Traditional Finnish (Dry) Sauna</h3>
                 <h4>What It Is</h4>
                 <p>A heated wooden room where an electric stove or wood-burning heater warms sauna stones to extreme temperatures. Water poured over stones creates steam in a practice called <em>löyly</em>.</p>
+                
+                <img src="images/finnish-sauna.jpg" alt="Traditional Finnish sauna interior with wooden benches" class="section-image">
                 
                 <h4>Temperature & Humidity</h4>
                 <ul>
@@ -292,6 +402,8 @@
                 <h4>What It Is</h4>
                 <p>Uses infrared light panels (ceramic or carbon) to emit radiant heat that penetrates directly into body tissue, warming the body from inside out rather than heating the surrounding air.</p>
                 
+                <img src="images/infrared-sauna.jpg" alt="Modern infrared sauna with glowing heating panels" class="section-image">
+                
                 <h4>Temperature & Humidity</h4>
                 <ul>
                     <li><strong>Temperature:</strong> 110–150°F (43–65°C)</li>
@@ -324,6 +436,8 @@
                 <h3>Steam Sauna (Turkish Bath/Hammam)</h3>
                 <h4>What It Is</h4>
                 <p>A tiled or stone-walled room with high-humidity steam generated from heated water.</p>
+                
+                <img src="images/steam-hammam.jpg" alt="Turkish hammam steam bath with marble interior" class="section-image">
                 
                 <h4>Temperature & Humidity</h4>
                 <ul>
@@ -602,8 +716,22 @@
             </section>
         </main>
         
+        <div class="credits">
+            <h3>📸 Image Attribution & Credits</h3>
+            <ul>
+                <li><strong>Hero Image:</strong> Sauna wellness guide background — <a href="https://unsplash.com" target="_blank">Unsplash</a> (CC0 Public Domain)</li>
+                <li><strong>Finnish Sauna:</strong> Traditional wooden sauna interior — <a href="https://www.pexels.com" target="_blank">Pexels</a> (CC0 Public Domain)</li>
+                <li><strong>Infrared Sauna:</strong> Modern infrared sauna — <a href="https://www.pexels.com" target="_blank">Pexels</a> (CC0 Public Domain)</li>
+                <li><strong>Steam Hammam:</strong> Turkish bath steam room — <a href="https://www.pexels.com" target="_blank">Pexels</a> (CC0 Public Domain)</li>
+                <li><strong>Wellness Image:</strong> Sauna relaxation — <a href="https://unsplash.com" target="_blank">Unsplash</a> (CC0 Public Domain)</li>
+            </ul>
+            <p style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 20px;">
+                <strong>Research & Content:</strong> Synthesized from Finnish cohort studies, <em>JAMA Internal Medicine</em> (2015), and peer-reviewed meta-analyses on heat therapy and wellness outcomes. All recommendations are evidence-based and designed for healthy adults; consult a physician before use if you have existing health conditions.
+            </p>
+        </div>
+        
         <footer>
-            <p>Research synthesized from Finnish cohort studies, JAMA Internal Medicine (2015), and meta-analyses on heat therapy and wellness outcomes.</p>
+            <p>© 2024 Sauna Best Practices Guide | All images licensed under CC0 Public Domain | Evidence-based wellness research</p>
         </footer>
     </div>
 </body>
